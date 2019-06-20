@@ -1,0 +1,601 @@
+0:100  0:100  MemLog inited, TSC freq: 2593996376
+0:100  0:000  CPU was calibrated with ACPI PM Timer
+0:100  0:000  
+0:100  0:000  Now is 20.6.2019,  2:32:39 (GMT)
+0:100  0:000  Starting Clover revision: 4630 on HPQ EFI
+0:100  0:000  Build with: [Args: -mc --no-usb -D NO_GRUB_DRIVERS_EMBEDDED -t XCODE8 | -D DISABLE_USB_SUPPORT -D NO_GRUB_DRIVERS_EMBEDDED --conf=/Users/macman/src/edk2/Conf -D USE_BIOS_BLOCKIO -D USE_LOW_EBDA -a X64 -b RELEASE -t XCODE8 -n 9 | OS: 10.13.6 | XCODE: 9.4.1]
+0:100  0:000  SelfDevicePath=PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000) @A6142798
+0:100  0:000  SelfDirPath = \EFI\Boot
+0:102  0:002  === [ Get Smbios ] ========================================
+0:102  0:000  Type 16 Index = 0
+0:102  0:000  Total Memory Slots Count = 2
+0:102  0:000  Type 17 Index = 0
+0:102  0:000  SmbiosTable.Type17->Speed = 1600MHz
+0:102  0:000  SmbiosTable.Type17->Size = 8192MB
+0:102  0:000  SmbiosTable.Type17->Bank/Device = BANK 0 Bottom-Slot 1(left)
+0:102  0:000  SmbiosTable.Type17->Vendor = Kingston
+0:102  0:000  SmbiosTable.Type17->SerialNumber = 22240412
+0:102  0:000  SmbiosTable.Type17->PartNumber = KN2M64-ETB        
+0:102  0:000  Type 17 Index = 1
+0:102  0:000  SmbiosTable.Type17->Speed = 1600MHz
+0:102  0:000  SmbiosTable.Type17->Size = 2048MB
+0:102  0:000  SmbiosTable.Type17->Bank/Device = BANK 2 Bottom-Slot 2(right)
+0:102  0:000  SmbiosTable.Type17->Vendor = Hynix/Hyundai
+0:102  0:000  SmbiosTable.Type17->SerialNumber = 19887119
+0:102  0:000  SmbiosTable.Type17->PartNumber = HMT425S6AFR6A-PB  
+0:102  0:000  Boot status=0
+0:102  0:000  Running on: 'HP EliteBook 820 G2' with board '225A'
+0:102  0:000  === [ GetCPUProperties ] ==================================
+0:102  0:000  CPU Vendor = 756E6547 Model=306D4
+0:102  0:000   The CPU supported SSE4.1
+0:102  0:000  BrandString = Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz
+0:102  0:000   The CPU supported turbo
+0:102  0:000  MSR 0x35               20004
+0:102  0:000  MSR 0xE2 before patch 1E008408
+0:102  0:000  MSR 0xE2 is locked, PM patches will be turned on
+0:102  0:000  MSR 0xCE              0005053B_F3011A00
+0:102  0:000  corrected FLEX_RATIO = 80000
+0:102  0:000  MSR 0x1B0             00000000
+0:102  0:000  FSBFrequency = 120 MHz, DMI FSBFrequency = 100 MHz, Corrected FSBFrequency = 100 MHz
+0:102  0:000  MaxDiv/MinDiv: 26.0/5
+0:102  0:000  Turbo: 31/31/31/32
+0:102  0:000  Features: 0xBFEBFBFF
+0:102  0:000  Threads: 4
+0:102  0:000  Cores: 2
+0:102  0:000  FSB: 100 MHz
+0:102  0:000  CPU: 3100 MHz
+0:102  0:000  TSC: 3100 MHz
+0:102  0:000  PIS: 100 MHz
+0:102  0:000  ExternalClock: 25 MHz
+0:102  0:000  === [ GetDevices ] ========================================
+0:102  0:000  PCI (00|00:00.00) : 8086 1604 class=060000
+0:102  0:000  PCI (00|00:02.00) : 8086 1616 class=030000
+0:102  0:000   - GFX: Model=Intel HD Graphics 5500 (Intel)
+0:102  0:000  PCI (00|00:03.00) : 8086 160C class=040300
+0:102  0:000  PCI (00|00:14.00) : 8086 9CB1 class=0C0330
+0:102  0:000  PCI (00|00:16.00) : 8086 9CBA class=078000
+0:102  0:000  PCI (00|00:16.01) : FFFF FFFF class=FFFFFF
+0:102  0:000  PCI (00|00:16.03) : FFFF FFFF class=FFFFFF
+0:102  0:000  PCI (00|00:19.00) : 8086 15A2 class=020000
+0:102  0:000   - LAN: 0 Vendor=Intel
+0:102  0:000  PCI (00|00:1B.00) : 8086 9CA0 class=040300
+0:102  0:000  PCI (00|00:1C.00) : 8086 9C90 class=060400
+0:102  0:000  PCI (00|00:1C.01) : 8086 9C92 class=060400
+0:102  0:000  PCI (00|02:00.00) : 10EC 5227 class=FF0000
+0:102  0:000  PCI (00|00:1C.03) : 8086 9C96 class=060400
+0:102  0:000  PCI (00|03:00.00) : 8086 095A class=028000
+0:102  0:000   - WIFI: Vendor=Intel
+0:102  0:000  PCI (00|00:1D.00) : 8086 9CA6 class=0C0320
+0:102  0:000  PCI (00|00:1F.00) : 8086 9CC3 class=060100
+0:102  0:000  PCI (00|00:1F.02) : 8086 9C83 class=010601
+0:102  0:000  PCI (00|00:1F.03) : 8086 9CA2 class=0C0500
+0:102  0:000  === [ GetDefaultSettings ] ================================
+0:102  0:000  Clover load options size = 0 bytes
+0:119  0:017  EFI\CLOVER\config.plist loaded: Success
+0:119  0:000  === [ GetListOfThemes ] ===================================
+0:120  0:000  - [00]: embedded
+0:120  0:000  - [00]: random
+0:125  0:004  - [00]: tonymacx86
+0:130  0:004  === [ Found config plists ] ===============================
+0:130  0:000  - config.plist
+0:130  0:000  - configORIGINAL.plist
+0:131  0:000  - config_bk.plist
+0:131  0:000  - config_HD5500.plist
+0:131  0:000  === [ GetEarlyUserSettings ] ==============================
+0:131  0:000  Custom boot CUSTOM_BOOT_DISABLED (0x0)
+0:131  0:000  KextsToPatch: 7 requested
+0:131  0:000   - [00]: AppleAHCIPort (External icons patch) :: BinPatch :: data len: 8
+0:131  0:000   - [01]: com.apple.driver.usb.AppleUSBXHCI (Remove USB port limit in XHCI kext) :: MatchOS: 10.14.x :: BinPatch :: data len: 9
+0:131  0:000   - [02]: IOGraphicsFamily (Bootloader Graphics - Second Stage Patch) :: BinPatch :: data len: 5
+0:131  0:000   - [03]: com.apple.iokit.IOGraphicsFamily (Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)) :: BinPatch :: data len: 5
+0:131  0:000   - patch disabled at config
+0:131  0:000   - [04]: AppleHDA (t1-10.12-AppleHDA/Realtek ALC...) :: BinPatch :: data len: 4
+0:131  0:000   - patch disabled at config
+0:131  0:000   - [05]: AppleHDA (t1-10.9-10.12-AppleHDA/Realtek ALC898) :: BinPatch :: data len: 4
+0:131  0:000   - patch disabled at config
+0:131  0:000   - [06]: AppleHDA (t1-AppleHDA/Resources/xml>zml) :: BinPatch :: data len: 6
+0:131  0:000   - patch disabled at config
+0:131  0:000  Default theme: tonymacx86
+0:131  0:000  Hiding entries with string Windows
+0:131  0:000  Hiding entries with string BOOTX64.EFI
+0:131  0:000  === [ LoadDrivers ] =======================================
+0:133  0:002  Loading AppleImageCodec-64.efi  status=Success
+0:133  0:000  Loading AppleKeyAggregator-64.efi  status=Success
+0:134  0:000  Loading AppleUITheme-64.efi  status=Success
+0:134  0:000  Loading DataHubDxe-64.efi  status=Success
+0:136  0:002  Loading FirmwareVolume-64.efi  status=Success
+0:136  0:000  Loading FSInject-64.efi  status=Success
+0:137  0:000  Loading SMCHelper-64.efi  status=Success
+0:137  0:000  Loading VBoxHfs-64.efi  status=Success
+0:137  0:000   - driver needs connecting
+0:137  0:000  Loading OsxAptioFix2Drv-64.efi  status=Success
+0:138  0:000  Loading apfs.efi  status=Success
+0:148  0:009   - driver needs connecting
+0:148  0:000  2 drivers needs connecting ...
+0:148  0:000  PlatformDriverOverrideProtocol not found. Installing ... Success
+0:148  0:000  APFS driver loaded
+0:148  0:000  Searching for invalid DiskIo BY_DRIVER connects:
+0:148  0:000   - Handle A6142518 with DiskIo, is Partition, no Fs, BY_DRIVER Agent: A5E73398, Disconnect: Success
+0:148  0:000   - Handle A6142318 with DiskIo, is Partition, no Fs, BY_DRIVER Agent: A5E73398, Disconnect: Success
+2:111  1:963  === [ InitScreen ] ========================================
+2:111  0:000  SetScreenResolution: 1920x1080 - not found!
+2:111  0:000  Console modes reported: 5, available modes:
+2:111  0:000   - [01]: 80x25 (current mode)
+2:111  0:000   - [03]: 120x36
+2:111  0:000   - [04]: 128x40
+2:111  0:000   - [05]: 170x40
+2:111  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)
+2:111  0:000  === [ GetMacAddress ] =====================================
+2:111  0:000  === [ ScanSPD ] ===========================================
+2:112  0:000  SMBus device : 8086 9CA2 class=0C0500 status=Success
+2:112  0:000  SMBus CmdReg: 0x1
+2:112  0:000  Scanning SMBus [8086:9CA2], mmio: 0xC133A004, ioport: 0xEF80, hostc: 0x11
+2:112  0:000  Slots to scan [8]...
+2:112  0:000  SPD[0]: Type 11 @0x50
+2:130  0:018  DDR speed 1600MHz
+2:130  0:000  Slot: 0 Type 24 8192MB 1600MHz Vendor=Kingston PartNo=KN2M64-ETBFD SerialNo=0D0D01080004070F
+2:131  0:000  SPD[2]: Type 11 @0x52
+2:149  0:018  DDR speed 1600MHz
+2:149  0:000  Slot: 2 Type 24 2048MB 1600MHz Vendor=SK Hynix PartNo=HMT425S6AFR6A-PBN0 SerialNo=0103050804070B0E
+2:150  0:000  === [ GetAcpiTablesList ] =================================
+2:150  0:000  Get Acpi Tables List from RSDT:
+2:150  0:000   - [00]: FACP  225A     len=268
+2:150  0:000   - [01]: HPET  225A     len=56
+2:150  0:000   - [02]: APIC  225A     len=188
+2:150  0:000   - [03]: MCFG  225A     len=60
+2:150  0:000   - [04]: TCPA  225A     len=50
+2:150  0:000   - [05]: SSDT  SataAhci len=729
+2:150  0:000   - [06]: SSDT  PtidDevc len=1162
+2:150  0:000   - [07]: SLIC  SLIC-MPC len=374
+2:150  0:000   - [08]: FPDT  225A     len=68
+2:150  0:000   - [09]: BGRT  225A     len=56
+2:150  0:000   - [10]: SSDT  Cpu0Ist len=1348
+2:150  0:000   - [11]: SSDT  CpuSsdt len=2959
+2:150  0:000   - [12]: SSDT  LakeTiny len=469
+2:150  0:000   - [13]: SSDT  SaSsdt  len=2348
+2:150  0:000   - [14]: ASF!  225A     len=165
+2:150  0:000  Calibrated TSC Frequency = 2593996376 = 2593MHz
+2:150  0:000  === [ GetUserSettings ] ===================================
+2:150  0:000  Add 2 devices:
+2:150  0:000   - [00]: [00:02.00]  (Intel IGPU)
+2:150  0:000   - [01]: [00:1B.00]  (Intel HDA)
+2:150  0:000  USB FixOwnership: no
+2:150  0:000  Dropping 1 tables:
+2:150  0:000   - [00]: Drop table  signature="MATS" (5354414D)
+2:150  0:000           - set table: 5354414D,                0 to drop: no
+2:150  0:000   - final DSDT Fix mask=00000000
+2:150  0:000  PatchesDSDT: 2 requested
+2:150  0:000   - [00]: (change GFX0 to IGPU) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:150  0:000   - [01]: (change B0D3 to HDAU) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:150  0:000    patch disabled at config
+2:150  0:000  Using ProductName from config: MacBookAir7,2
+2:150  0:000  Using latest BiosVersion from config
+2:150  0:000  BiosVersion: MBA71.88Z.0180.B00.1809171321
+2:150  0:000  BiosReleaseDate: 09/17/2018
+2:150  0:000  Using FirmwareFeatures from config: 0xE00FE137
+2:150  0:000  Using FirmwareFeaturesMask from config: 0xFF1FFF3F
+2:150  0:000  Board-ID set from config as Mac-937CB26E2E02BB01
+2:150  0:000  BoardType: 0xA
+2:150  0:000  ChassisType: 0x9
+2:150  0:000  Converted CustomUUID 5EE4A00C-2059-52E5-9CC8-9519C009EB72
+2:150  0:000  === [ Found DSDT tables ] =================================
+2:349  0:198  === [ ScanVolumes ] =======================================
+2:349  0:000  Found 10 volumes with blockIO
+2:349  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)
+2:358  0:009  - [01]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)
+2:358  0:000          Result of bootcode detection: bootable unknown (legacy)
+2:367  0:008          This is SelfVolume !!
+2:367  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)
+2:373  0:006          Result of bootcode detection: bootable unknown (legacy)
+2:373  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(3,GPT,F9CCFC64-2F6D-431A-ABA7-18693DF4D441,0x136EF570,0x1362B548)
+2:374  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(4,GPT,80765EE4-DD33-47B0-98D4-00BD79A1FFA7,0x26D5B000,0x135EB000)
+2:390  0:015          Result of bootcode detection: bootable unknown (legacy)
+2:390  0:000          hiding this volume
+2:390  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x1C,0x1)\Pci(0x0,0x0)
+2:390  0:000  - [06]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,D5B6C470CE7EA943BA38689064E358AA)
+2:390  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,188D2F110EF5BE35BC94B0037500A624)
+2:390  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,1B268C1B9F17D144B389E0CF7ADABB0B)
+2:390  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,2FC154AA09B56B4888D154B02464D304)
+2:390  0:000  === [ Dump SMC keys from NVRAM ] ==========================
+2:390  0:000  found AppleSMC protocol
+2:390  0:000  Registered 0 SMC keys
+2:397  0:006  === [ ScanLoader ] ========================================
+2:397  0:000  - [01]: 'EFI'
+2:421  0:023          AddLoaderEntry for Volume Name=EFI
+2:421  0:000          skipped because entry is hidden
+2:421  0:000  - [03]: 'compartida'
+2:423  0:002  - [04]: 'WINDOWS', hidden
+2:423  0:000  - [06]: 'Preboot'
+2:433  0:010          AddLoaderEntry for Volume Name=Preboot
+2:442  0:008      Check if volume Is Hibernated:
+2:442  0:000      Check sleep image 'by signature':
+2:442  0:000      using default sleep image name = \private\var\vm\sleepimage
+2:443  0:000      sleepimage not found -> Not Found
+2:443  0:000      hibernated: no - sign
+2:444  0:001          AddLoaderEntry for Volume Name=Preboot
+2:463  0:019  - [07]: 'hackintosh'
+2:628  0:164          AddLoaderEntry for Volume Name=hackintosh
+2:676  0:047      Check if volume Is Hibernated:
+2:676  0:000      Check sleep image 'by signature':
+2:766  0:089      read prefs \Library\Preferences\com.apple.PowerManagement.plist status=Success
+2:766  0:000      using default sleep image name = \private\var\vm\sleepimage
+2:842  0:075      sleepimage not found -> Not Found
+2:842  0:000      hibernated: no - sign
+2:850  0:008  - [08]: 'Recovery'
+2:853  0:002          AddLoaderEntry for Volume Name=Recovery
+2:867  0:014  - [09]: 'VM'
+2:868  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+2:868  0:000  Default boot entry not found
+2:868  0:000  DefaultIndex=-1 and MainMenu.EntryCount=4
+6:921  4:052  Using embedded font: Success
+6:923  0:001  GUI ready
+18:753  11:830  ReinitSelfLib after theme change
+18:753  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)
+18:753  0:000  === [ ScanVolumes ] =======================================
+18:753  0:000  Found 10 volumes with blockIO
+18:753  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)
+18:792  0:038  - [01]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)
+18:793  0:000          Result of bootcode detection: bootable unknown (legacy)
+18:793  0:000          This is SelfVolume !!
+18:793  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)
+18:800  0:006          Result of bootcode detection: bootable unknown (legacy)
+18:800  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(3,GPT,F9CCFC64-2F6D-431A-ABA7-18693DF4D441,0x136EF570,0x1362B548)
+18:816  0:016  - [04]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(4,GPT,80765EE4-DD33-47B0-98D4-00BD79A1FFA7,0x26D5B000,0x135EB000)
+18:833  0:016          Result of bootcode detection: bootable unknown (legacy)
+18:833  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x1C,0x1)\Pci(0x0,0x0)
+18:833  0:000  - [06]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,D5B6C470CE7EA943BA38689064E358AA)
+18:833  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,188D2F110EF5BE35BC94B0037500A624)
+18:833  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,1B268C1B9F17D144B389E0CF7ADABB0B)
+18:833  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,2FC154AA09B56B4888D154B02464D304)
+18:833  0:000  === [ ScanLoader ] ========================================
+18:833  0:000  - [01]: 'EFI'
+18:835  0:001          AddLoaderEntry for Volume Name=EFI
+18:835  0:000       skipped because path `PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)\EFI\BOOT\BOOTX64.efii` is self path!
+18:835  0:000  - [03]: 'compartida'
+18:835  0:000  - [04]: 'WINDOWS'
+18:836  0:000  - [06]: 'Preboot'
+18:838  0:002          AddLoaderEntry for Volume Name=Preboot
+18:859  0:020      Check if volume Is Hibernated:
+18:859  0:000      Check sleep image 'by signature':
+18:860  0:000      using default sleep image name = \private\var\vm\sleepimage
+18:860  0:000      sleepimage not found -> Not Found
+18:860  0:000      hibernated: no - sign
+18:861  0:000          AddLoaderEntry for Volume Name=Preboot
+18:881  0:020  - [07]: 'hackintosh'
+18:898  0:016          AddLoaderEntry for Volume Name=hackintosh
+18:902  0:004      Check if volume Is Hibernated:
+18:902  0:000      Check sleep image 'by signature':
+18:907  0:004      read prefs \Library\Preferences\com.apple.PowerManagement.plist status=Success
+18:907  0:000      using default sleep image name = \private\var\vm\sleepimage
+18:908  0:001      sleepimage not found -> Not Found
+18:908  0:000      hibernated: no - sign
+18:917  0:008  - [08]: 'Recovery'
+18:919  0:002          AddLoaderEntry for Volume Name=Recovery
+18:926  0:007  - [09]: 'VM'
+18:927  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+18:927  0:000  Default boot entry not found
+18:927  0:000  DefaultIndex=-1 and MainMenu.EntryCount=4
+19:707  0:779  ReinitSelfLib after theme change
+19:707  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)
+19:707  0:000  === [ ScanVolumes ] =======================================
+19:707  0:000  Found 10 volumes with blockIO
+19:707  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)
+19:708  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)
+19:708  0:000          Result of bootcode detection: bootable unknown (legacy)
+19:708  0:000          This is SelfVolume !!
+19:708  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)
+19:709  0:000          Result of bootcode detection: bootable unknown (legacy)
+19:709  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(3,GPT,F9CCFC64-2F6D-431A-ABA7-18693DF4D441,0x136EF570,0x1362B548)
+19:709  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(4,GPT,80765EE4-DD33-47B0-98D4-00BD79A1FFA7,0x26D5B000,0x135EB000)
+19:710  0:000          Result of bootcode detection: bootable unknown (legacy)
+19:710  0:000          hiding this volume
+19:710  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x1C,0x1)\Pci(0x0,0x0)
+19:710  0:000  - [06]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,D5B6C470CE7EA943BA38689064E358AA)
+19:710  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,188D2F110EF5BE35BC94B0037500A624)
+19:710  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,1B268C1B9F17D144B389E0CF7ADABB0B)
+19:710  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,2FC154AA09B56B4888D154B02464D304)
+19:710  0:000  === [ ScanLoader ] ========================================
+19:710  0:000  - [01]: 'EFI'
+19:711  0:001          AddLoaderEntry for Volume Name=EFI
+19:711  0:000          skipped because entry is hidden
+19:711  0:000  - [03]: 'compartida'
+19:712  0:000  - [04]: 'WINDOWS', hidden
+19:712  0:000  - [06]: 'Preboot'
+19:714  0:002          AddLoaderEntry for Volume Name=Preboot
+19:717  0:003      Check if volume Is Hibernated:
+19:717  0:000      Check sleep image 'by signature':
+19:718  0:000      using default sleep image name = \private\var\vm\sleepimage
+19:718  0:000      sleepimage not found -> Not Found
+19:718  0:000      hibernated: no - sign
+19:719  0:000          AddLoaderEntry for Volume Name=Preboot
+19:728  0:009  - [07]: 'hackintosh'
+19:745  0:016          AddLoaderEntry for Volume Name=hackintosh
+19:750  0:004      Check if volume Is Hibernated:
+19:750  0:000      Check sleep image 'by signature':
+19:754  0:004      read prefs \Library\Preferences\com.apple.PowerManagement.plist status=Success
+19:754  0:000      using default sleep image name = \private\var\vm\sleepimage
+19:756  0:001      sleepimage not found -> Not Found
+19:756  0:000      hibernated: no - sign
+19:764  0:008  - [08]: 'Recovery'
+19:767  0:002          AddLoaderEntry for Volume Name=Recovery
+19:774  0:007  - [09]: 'VM'
+19:774  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+19:775  0:000  Default boot entry not found
+19:775  0:000  DefaultIndex=-1 and MainMenu.EntryCount=4
+20:378  0:603  ReinitSelfLib after theme change
+20:378  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)
+20:378  0:000  === [ ScanVolumes ] =======================================
+20:378  0:000  Found 10 volumes with blockIO
+20:378  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)
+20:378  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)
+20:379  0:000          Result of bootcode detection: bootable unknown (legacy)
+20:379  0:000          This is SelfVolume !!
+20:379  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)
+20:380  0:000          Result of bootcode detection: bootable unknown (legacy)
+20:380  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(3,GPT,F9CCFC64-2F6D-431A-ABA7-18693DF4D441,0x136EF570,0x1362B548)
+20:380  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(4,GPT,80765EE4-DD33-47B0-98D4-00BD79A1FFA7,0x26D5B000,0x135EB000)
+20:381  0:000          Result of bootcode detection: bootable unknown (legacy)
+20:381  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x1C,0x1)\Pci(0x0,0x0)
+20:381  0:000  - [06]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,D5B6C470CE7EA943BA38689064E358AA)
+20:381  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,188D2F110EF5BE35BC94B0037500A624)
+20:381  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,1B268C1B9F17D144B389E0CF7ADABB0B)
+20:381  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,2FC154AA09B56B4888D154B02464D304)
+20:381  0:000  === [ ScanLoader ] ========================================
+20:381  0:000  - [01]: 'EFI'
+20:382  0:001          AddLoaderEntry for Volume Name=EFI
+20:382  0:000       skipped because path `PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)\EFI\BOOT\BOOTX64.efii` is self path!
+20:382  0:000  - [03]: 'compartida'
+20:383  0:000  - [04]: 'WINDOWS'
+20:383  0:000  - [06]: 'Preboot'
+20:386  0:002          AddLoaderEntry for Volume Name=Preboot
+20:389  0:003      Check if volume Is Hibernated:
+20:389  0:000      Check sleep image 'by signature':
+20:389  0:000      using default sleep image name = \private\var\vm\sleepimage
+20:389  0:000      sleepimage not found -> Not Found
+20:389  0:000      hibernated: no - sign
+20:390  0:000          AddLoaderEntry for Volume Name=Preboot
+20:400  0:009  - [07]: 'hackintosh'
+20:417  0:016          AddLoaderEntry for Volume Name=hackintosh
+20:421  0:004      Check if volume Is Hibernated:
+20:421  0:000      Check sleep image 'by signature':
+20:425  0:004      read prefs \Library\Preferences\com.apple.PowerManagement.plist status=Success
+20:426  0:000      using default sleep image name = \private\var\vm\sleepimage
+20:427  0:001      sleepimage not found -> Not Found
+20:427  0:000      hibernated: no - sign
+20:436  0:008  - [08]: 'Recovery'
+20:438  0:002          AddLoaderEntry for Volume Name=Recovery
+20:445  0:007  - [09]: 'VM'
+20:446  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+20:446  0:000  Default boot entry not found
+20:446  0:000  DefaultIndex=-1 and MainMenu.EntryCount=4
+20:652  0:205  ReinitSelfLib after theme change
+20:652  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)
+20:652  0:000  === [ ScanVolumes ] =======================================
+20:652  0:000  Found 10 volumes with blockIO
+20:652  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)
+20:652  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)
+20:653  0:000          Result of bootcode detection: bootable unknown (legacy)
+20:653  0:000          This is SelfVolume !!
+20:653  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)
+20:653  0:000          Result of bootcode detection: bootable unknown (legacy)
+20:653  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(3,GPT,F9CCFC64-2F6D-431A-ABA7-18693DF4D441,0x136EF570,0x1362B548)
+20:654  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(4,GPT,80765EE4-DD33-47B0-98D4-00BD79A1FFA7,0x26D5B000,0x135EB000)
+20:654  0:000          Result of bootcode detection: bootable unknown (legacy)
+20:654  0:000          hiding this volume
+20:654  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x1C,0x1)\Pci(0x0,0x0)
+20:654  0:000  - [06]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,D5B6C470CE7EA943BA38689064E358AA)
+20:655  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,188D2F110EF5BE35BC94B0037500A624)
+20:655  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,1B268C1B9F17D144B389E0CF7ADABB0B)
+20:655  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,2FC154AA09B56B4888D154B02464D304)
+20:655  0:000  === [ ScanLoader ] ========================================
+20:655  0:000  - [01]: 'EFI'
+20:656  0:001          AddLoaderEntry for Volume Name=EFI
+20:656  0:000          skipped because entry is hidden
+20:656  0:000  - [03]: 'compartida'
+20:656  0:000  - [04]: 'WINDOWS', hidden
+20:656  0:000  - [06]: 'Preboot'
+20:659  0:002          AddLoaderEntry for Volume Name=Preboot
+20:662  0:002      Check if volume Is Hibernated:
+20:662  0:000      Check sleep image 'by signature':
+20:662  0:000      using default sleep image name = \private\var\vm\sleepimage
+20:663  0:000      sleepimage not found -> Not Found
+20:663  0:000      hibernated: no - sign
+20:664  0:000          AddLoaderEntry for Volume Name=Preboot
+20:673  0:009  - [07]: 'hackintosh'
+20:690  0:016          AddLoaderEntry for Volume Name=hackintosh
+20:694  0:004      Check if volume Is Hibernated:
+20:694  0:000      Check sleep image 'by signature':
+20:699  0:004      read prefs \Library\Preferences\com.apple.PowerManagement.plist status=Success
+20:699  0:000      using default sleep image name = \private\var\vm\sleepimage
+20:700  0:001      sleepimage not found -> Not Found
+20:700  0:000      hibernated: no - sign
+20:709  0:008  - [08]: 'Recovery'
+20:711  0:002          AddLoaderEntry for Volume Name=Recovery
+20:719  0:007  - [09]: 'VM'
+20:719  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+20:719  0:000  Default boot entry not found
+20:719  0:000  DefaultIndex=-1 and MainMenu.EntryCount=4
+20:896  0:176  ReinitSelfLib after theme change
+20:896  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)
+20:896  0:000  === [ ScanVolumes ] =======================================
+20:896  0:000  Found 10 volumes with blockIO
+20:896  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)
+20:896  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)
+20:897  0:000          Result of bootcode detection: bootable unknown (legacy)
+20:897  0:000          This is SelfVolume !!
+20:897  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)
+20:897  0:000          Result of bootcode detection: bootable unknown (legacy)
+20:898  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(3,GPT,F9CCFC64-2F6D-431A-ABA7-18693DF4D441,0x136EF570,0x1362B548)
+20:898  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(4,GPT,80765EE4-DD33-47B0-98D4-00BD79A1FFA7,0x26D5B000,0x135EB000)
+20:899  0:000          Result of bootcode detection: bootable unknown (legacy)
+20:899  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x1C,0x1)\Pci(0x0,0x0)
+20:899  0:000  - [06]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,D5B6C470CE7EA943BA38689064E358AA)
+20:899  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,188D2F110EF5BE35BC94B0037500A624)
+20:899  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,1B268C1B9F17D144B389E0CF7ADABB0B)
+20:899  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(2,GPT,AF2F0883-C1F4-4BC3-8409-3E9A14C51568,0x64028,0x1364B548)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,2FC154AA09B56B4888D154B02464D304)
+20:899  0:000  === [ ScanLoader ] ========================================
+20:899  0:000  - [01]: 'EFI'
+20:900  0:001          AddLoaderEntry for Volume Name=EFI
+20:900  0:000       skipped because path `PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x1,0x0,0x0)\HD(1,GPT,E6FDD166-69BE-4ABD-88CB-43D65D6800C8,0x28,0x64000)\EFI\BOOT\BOOTX64.efii` is self path!
+20:900  0:000  - [03]: 'compartida'
+20:901  0:000  - [04]: 'WINDOWS'
+20:901  0:000  - [06]: 'Preboot'
+20:904  0:002          AddLoaderEntry for Volume Name=Preboot
+20:907  0:003      Check if volume Is Hibernated:
+20:907  0:000      Check sleep image 'by signature':
+20:907  0:000      using default sleep image name = \private\var\vm\sleepimage
+20:907  0:000      sleepimage not found -> Not Found
+20:907  0:000      hibernated: no - sign
+20:908  0:000          AddLoaderEntry for Volume Name=Preboot
+20:918  0:009  - [07]: 'hackintosh'
+20:935  0:016          AddLoaderEntry for Volume Name=hackintosh
+20:939  0:004      Check if volume Is Hibernated:
+20:939  0:000      Check sleep image 'by signature':
+20:943  0:004      read prefs \Library\Preferences\com.apple.PowerManagement.plist status=Success
+20:943  0:000      using default sleep image name = \private\var\vm\sleepimage
+20:945  0:001      sleepimage not found -> Not Found
+20:945  0:000      hibernated: no - sign
+20:954  0:008  - [08]: 'Recovery'
+20:956  0:002          AddLoaderEntry for Volume Name=Recovery
+20:963  0:007  - [09]: 'VM'
+20:964  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+20:964  0:000  Default boot entry not found
+20:964  0:000  DefaultIndex=-1 and MainMenu.EntryCount=4
+83:843  62:879   boot with args: dart=0
+83:843  0:000  Boot option Boot0000 not found
+83:843  0:000  === [ StartLoader ] =======================================
+83:843  0:000  Finally: ExternalClock=25MHz BusSpeed=99770kHz CPUFreq=2594MHz PIS: hw.busfrequency=100000000Hz
+83:844  0:000  Loading boot.efi  status=Success
+84:192  0:348  GetOSVersion: 10.14 (18A391)
+84:192  0:000  CSR_CFG: CSR_ALLOW_UNTRUSTED_KEXTS | CSR_ALLOW_UNRESTRICTED_FS
+84:192  0:000  Filtering KextPatches:
+84:192  0:000   - [00]: AppleAHCIPort (External icons patch) :: BinPatch :: [OS: 10.14 | MatchOS: All | MatchBuild: All] ==> allowed
+84:192  0:000   - [01]: com.apple.driver.usb.AppleUSBXHCI (Remove USB port limit in XHCI kext) :: BinPatch :: [OS: 10.14 | MatchOS: 10.14.x | MatchBuild: All] ==> allowed
+84:192  0:000   - [02]: IOGraphicsFamily (Bootloader Graphics - Second Stage Patch) :: BinPatch :: [OS: 10.14 | MatchOS: All | MatchBuild: All] ==> allowed
+84:192  0:000   - [03]: com.apple.iokit.IOGraphicsFamily (Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)) :: BinPatch :: [OS: 10.14 | MatchOS: All | MatchBuild: All] ==> disabled by user
+84:192  0:000   - [04]: AppleHDA (t1-10.12-AppleHDA/Realtek ALC...) :: BinPatch :: [OS: 10.14 | MatchOS: All | MatchBuild: All] ==> disabled by user
+84:192  0:000   - [05]: AppleHDA (t1-10.9-10.12-AppleHDA/Realtek ALC898) :: BinPatch :: [OS: 10.14 | MatchOS: All | MatchBuild: All] ==> disabled by user
+84:192  0:000   - [06]: AppleHDA (t1-AppleHDA/Resources/xml>zml) :: BinPatch :: [OS: 10.14 | MatchOS: All | MatchBuild: All] ==> disabled by user
+84:192  0:000  Will not patch boot.efi
+84:192  0:000  === [ PatchSmbios ] =======================================
+84:192  0:000  insert table 9 for dev 19:0
+84:192  0:000  insert table 9 for dev 0:0
+84:193  0:000  Trusting SMBIOS...
+84:193  0:000  Detected alternating SMBIOS channel banks
+84:193  0:000  Channels: 2
+84:193  0:000  Interleave: 0 2 1 3 4 6 5 7 8 10 9 11 12 14 13 15 16 18 17 19 20 22 21 23
+84:193  0:000   partNum=KN2M64-ETB        
+84:193  0:000  SMBIOS Type 17 Index = 0 => 0 0:
+84:193  0:000  BANK 0 DIMM0 1600MHz 8192MB
+84:193  0:000   partNum=HMT425S6AFR6A-PB  
+84:193  0:000  SMBIOS Type 17 Index = 1 => 1 2:
+84:193  0:000  BANK 1 DIMM0 1600MHz 2048MB
+84:193  0:000  mTotalSystemMemory = 10240
+84:193  0:000  NumberOfMemoryDevices = 2
+84:193  0:000  Type20[0]->End = 0x7FFFFF, Type17[0] = 0x2000
+84:193  0:000  Type20[1]->End = 0x9FFFFF, Type17[1] = 0x4800
+84:193  0:000  Table 131 is present, CPUType=14
+84:193  0:000  Change to: 706
+84:193  0:000  === [ PatchACPI ] =========================================
+84:193  0:000  Xsdt reallocation done
+84:193  0:000  old FADT length=10C
+84:193  0:000   SignatureFixup: 0xA7313038 -> 0x0
+84:193  0:000  Apply DsdtFixMask=0x00000000
+84:193  0:000     drop _DSM mask=0xFFFF
+84:193  0:000  === [ FixBiosDsdt ] =======================================
+84:193  0:000  VideoCard devID=0x16168086
+84:193  0:000  DisplayADR1[0] = 0x20000, DisplayADR2[0] = 0xFFFE
+84:204  0:010  USBADR[0] = 0x140000 and PCIe = 0xFFFE
+84:214  0:010  USBADR[1] = 0x1D0000 and PCIe = 0xFFFE
+84:214  0:000  Patching DSDT:
+84:214  0:000   - [change GFX0 to IGPU]: pattern 47465830, patched at: [ (38A) (414) (48) (17) (13) (14) (353D) (570) (11) (21) (C96) (1D) (34E) (413) (49) (22E) (89) (14) (14) (2B) (44) (2F) (2E) (86) (1C) (29) (2D) (2A) (34) (24) (F) (2D) (43) (1A) (24) (1E) (19) (23) (1E) (36) (28) (46) (17170) (8E3C) (269) (30) (177) (3C1) ]
+84:214  0:000   - [change B0D3 to HDAU]: disabled
+84:214  0:000    0 replacements
+84:214  0:000  first CPU found at 1CC2 offset 1CC5
+84:214  0:000  score candidate at 1CBE
+84:214  0:000  score inserted in acpi_cpu_score _PR_
+84:214  0:000  Found ACPI CPU: CPU0 | CPU1 | CPU2 | CPU3 | CPU4 | CPU5 | CPU6 | CPU7 , within the score: _PR_
+84:215  0:000  PreCleanup XSDT: count=15, length=156
+84:215  0:000  PreCleanup XSDT, corrected XSDT: count=15, length=156
+84:215  0:000  === [ ACPIDropTables ] ====================================
+84:215  0:000  0. [change GFX0 to IGPU]: pattern 47465830, bin not found / already patched!
+84:215  0:000  1. [change B0D3 to HDAU]: disabled
+84:215  0:000    0 replacements
+84:215  0:000  0. [change GFX0 to IGPU]: pattern 47465830, bin not found / already patched!
+84:215  0:000  1. [change B0D3 to HDAU]: disabled
+84:215  0:000    0 replacements
+84:215  0:000  Found OperationRegion(MCHP, SystemMemory, FED158A4, ...)
+84:215  0:000  0. [change GFX0 to IGPU]: pattern 47465830, bin not found / already patched!
+84:215  0:000  1. [change B0D3 to HDAU]: disabled
+84:215  0:000    0 replacements
+84:215  0:000  0. [change GFX0 to IGPU]: pattern 47465830, bin not found / already patched!
+84:215  0:000  1. [change B0D3 to HDAU]: disabled
+84:215  0:000    0 replacements
+84:215  0:000  Found OperationRegion(PNVS, SystemMemory, A9F78F98, ...)
+84:215  0:000  0. [change GFX0 to IGPU]: pattern 47465830, bin not found / already patched!
+84:215  0:000  1. [change B0D3 to HDAU]: disabled
+84:215  0:000    0 replacements
+84:215  0:000  0. [change GFX0 to IGPU]: pattern 47465830, bin not found / already patched!
+84:215  0:000  1. [change B0D3 to HDAU]: disabled
+84:215  0:000    0 replacements
+84:215  0:000  Found OperationRegion(SANV, SystemMemory, A9F75F18, ...)
+84:215  0:000  Found OperationRegion(CCDC, SystemMemory, 80000000, ...)
+84:215  0:000  CPUBase=0 and ApicCPUBase=0 ApicCPUNum=8
+84:215  0:000  Cleanup XSDT: count=15, length=156
+84:215  0:000  corrected XSDT count=15, length=156
+84:215  0:000  === [ RestSetup macOS ] ===================================
+84:215  0:000  EdidDiscovered size=128
+84:215  0:000  --- Discovered EDID Table size:128
+84:215  0:000  000  |  00  FF  FF  FF  FF  FF  FF  00  30  E4
+84:215  0:000  010  |  EE  03  00  00  00  00  00  16  01  04
+84:215  0:000  020  |  95  1C  10  78  0A  10  A5  96  58  57
+84:215  0:000  030  |  8F  28  20  50  54  00  00  00  01  01
+84:215  0:000  040  |  01  01  01  01  01  01  01  01  01  01
+84:215  0:000  050  |  01  01  01  01  CE  1D  56  D4  50  00
+84:215  0:000  060  |  26  30  30  20  25  00  15  9C  10  00
+84:215  0:000  070  |  00  1B  DF  13  56  D4  50  00  26  30
+84:215  0:000  080  |  30  20  25  00  15  9C  10  00  00  1B
+84:215  0:000  090  |  00  00  00  00  00  00  00  00  00  00
+84:215  0:000  100  |  00  00  00  00  00  00  00  00  00  00
+84:215  0:000  110  |  00  02  00  0C  4C  FF  0A  3C  64  1A
+84:215  0:000  120  |  11  1D  64  00  00  00  00  50
+84:215  0:000  custom properties for device 00:02.00 injected
+84:215  0:000  Intel HD Graphics 5500 [8086:1616] :: PciRoot(0x0)\Pci(0x2,0x0)
+84:215  0:000    Found Full Wide XGA Display - 16:9 :: Width=1366 Height=768
+84:215  0:000  Intel GFX revision  = 0x9
+84:215  0:000  custom properties for device 00:1B.00 injected
+84:215  0:000  stringlength = 736
+84:215  0:000  CurrentMode: Width=1366 Height=768
+84:215  0:000  Beginning FSInjection
+FSInjectionInstall ...
+- Our FSI_SIMPLE_FILE_SYSTEM_PROTOCOL installed on handle: A6689E18
+FSInjectionInstall ...
+- Our FSI_SIMPLE_FILE_SYSTEM_PROTOCOL installed on handle: A6689E18
+84:231  0:015  Use origin smbios table type 1 guid.
+84:232  0:001  Preparing kexts injection for arch=x86_64 from EFI\CLOVER\kexts\Other
+84:232  0:000  Extra kext: EFI\CLOVER\kexts\Other\WhateverGreen.kext (v.1.2.4)
+84:248  0:015  Extra kext: EFI\CLOVER\kexts\Other\IntelBacklight.kext (v.1.0.10)
+84:254  0:005  Extra kext: EFI\CLOVER\kexts\Other\Lilu.kext (v.1.2.8)
+84:260  0:005  Extra kext: EFI\CLOVER\kexts\Other\ApplePS2SmartTouchPad.kext (v.4.6.8)
+84:298  0:037    |-- PlugIn kext: EFI\CLOVER\kexts\Other\ApplePS2SmartTouchPad.kext\Contents\PlugIns\ApplePS2Controller.kext (v.4.6.8)
+84:304  0:006    |-- PlugIn kext: EFI\CLOVER\kexts\Other\ApplePS2SmartTouchPad.kext\Contents\PlugIns\ApplePS2Keyboard.kext (v.4.6.8)
+84:310  0:005  Extra kext: EFI\CLOVER\kexts\Other\AppleBacklightFixup.kext (v.1.0.2)
+84:317  0:007  Extra kext: EFI\CLOVER\kexts\Other\RealtekRTL8111.kext (v.2.2.2)
+84:332  0:014  Extra kext: EFI\CLOVER\kexts\Other\VoodooSDHC.kext (v.1.1.2b1)
+84:342  0:010  Extra kext: EFI\CLOVER\kexts\Other\FakeSMC.kext (v.1787)
+84:362  0:019  Extra kext: EFI\CLOVER\kexts\Other\VoodooPS2Controller.kext (v.1.9.2)
+84:380  0:018    |-- PlugIn kext: EFI\CLOVER\kexts\Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Mouse.kext (v.1.9.2)
+84:391  0:010    |-- PlugIn kext: EFI\CLOVER\kexts\Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Keyboard.kext (v.1.9.2)
+84:422  0:031    |-- PlugIn kext: EFI\CLOVER\kexts\Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Trackpad.kext (v.1.9.2)
+84:451  0:029  Preparing kexts injection for arch=x86_64 from EFI\CLOVER\kexts\10.14
+84:451  0:000  Extra kext: EFI\CLOVER\kexts\10.14\VirtualSMC.kext (v.1.0.3)
+84:473  0:022  Extra kext: EFI\CLOVER\kexts\10.14\SMCSuperIO.kext (v.1.0.3)
+84:480  0:006  Extra kext: EFI\CLOVER\kexts\10.14\SMCProcessor.kext (v.1.0.3)
+84:487  0:007  Extra kext: EFI\CLOVER\kexts\10.14\SMCLightSensor.kext (v.1)
+84:493  0:005  Extra kext: EFI\CLOVER\kexts\10.14\SMCBatteryManager.kext (v.1)
+84:500  0:007  Extra kext: EFI\CLOVER\kexts\10.14\RTCMemoryFixup.kext (v.1.0.3)
+84:506  0:005  Extra kext: EFI\CLOVER\kexts\10.14\NoVPAJpeg.kext (v.1.0.0)
+84:512  0:005  Extra kext: EFI\CLOVER\kexts\10.14\ACPISensors.kext (v.1440)
+84:530  0:017  SetScreenResolution: 1366x768 - already set
+84:551  0:021  Custom boot is disabled
+84:558  0:007  Closing log
